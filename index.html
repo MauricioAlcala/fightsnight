@@ -88,7 +88,8 @@
           <li><a href="#speakers">Comentaristas</a></li>
           <li><a href="#events">Eventos</a></li>
           <li><a href="#contact">Contacto</a></li>
-        </ul>
+          <li><a href="https://www.facebook.com/FightsNightBoxingPPV/" class="facebook"><i class="fa fa-facebook"></i></a> </li>
+        </ul>     
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- End Header -->
@@ -110,7 +111,9 @@ svp_player.execute();
 //-->
 </script>
 <noscript>Your browser does not support JavaScript! JavaScript is needed to display this video player!</noscript>
-<!--player code end-->      
+<!--player code end-->    
+
+
 
 
   </section><!-- End Intro Section -->
@@ -776,7 +779,7 @@ svp_player.execute();
 
             <div class="social-links">
               <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
               <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
               <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
               <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
@@ -797,6 +800,30 @@ svp_player.execute();
       </div>
     </div>
   </footer><!-- End  Footer -->
+
+  <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v8.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="106503661205479">
+</div>
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
