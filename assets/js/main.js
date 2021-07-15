@@ -198,7 +198,7 @@
       once: true
     });
   }
-  $(window).on('load', function() {
+  $(window).on('load', function () {
     aos_init();
     $('#evento').magnificPopup({ type: 'image' });
     $('#evento').click();
