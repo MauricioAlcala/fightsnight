@@ -1,0 +1,47 @@
+# set JEKYLL_ENV=production | bundle exec jekyll build
+title: FightsNight
+email: Los Angeles, CA, United States
+phone: +1 323 854 5465
+address:  Los Angeles, CA, United States
+description: >- # this means to ignore newlines until "baseurl:"
+  Peleas y peladores que la gente quiere ver.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://fightsnight.com/" # the base hostname & protocol for your site, e.g. http://example.com
+google_analytics: UA-179095177-1
+
+twitte: 
+facebook: https://www.facebook.com/FightsNightBoxingPPV
+instagram:   
+youtube:  
+tiktok: 
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: "es"
+      lazy: true
+      image:
+        path: /assets/img/favicon/og.png
+        height: 347
+        width: 663
+      author: Vanessa
