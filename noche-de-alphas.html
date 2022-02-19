@@ -92,8 +92,10 @@
           <li><a href="#about">Nosotros</a></li>
           <li><a href="#events">Eventos</a></li>
           <li><a href="#speakers">Comentaristas</a></li>
+          <li><a href="contrataciones.html">Contrataciones</a></li>
           <li><a href="#contact">Contacto</a></li>
           <li><a href="https://www.facebook.com/FightsNightBoxingPPV/" class="facebook"><i class="fa fa-facebook"></i></a>
+          <li class="buy-tickets"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&useraction=commit&token=EC-93X34536CA695080Y">Buy Tickets</a></li>
           </li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -457,7 +459,7 @@
             <ul>
               <li><i class="fa fa-angle-right"></i> <a href="#">Galería</a></li>
               <li><i class="fa fa-angle-right"></i> <a href="#">Videos</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Contrataciones</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="contrataciones.html">Contrataciones</a></li>
               <li><i class="fa fa-angle-right"></i> <a href="#">Servicios</a></li>
               <li><i class="fa fa-angle-right"></i> <a href="#">Políticas</a></li>
             </ul>
@@ -494,6 +496,32 @@
     </div>
   </footer><!-- End  Footer -->
 
+  <!--a id="" href="assets/img/" class="d-none gallery-popup hidden-xs-up">
+    <img src="assets/img/" alt="Noche de Campeones II.jpeg">
+  </a-->
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v9.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="106503661205479">
+  </div>
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <!-- Vendor JS Files -->
