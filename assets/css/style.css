@@ -471,8 +471,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(/assets/img/xtreme-pro-tj.jpg) center;
-  background-size: 80%;
+  background: url(/assets/img/banner2.jpg) top center;
+  background-size: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -485,7 +485,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro:before {
   content: "";
-  background: rgba(6, 12, 34, 0.8);
+  background: clear;
   position: absolute;
   bottom: 0;
   top: 0;
